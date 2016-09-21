@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.maxz.db.MainActivity"
+    android:background="@drawable/bggg">
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="ดีจ้า"
+        android:id="@+id/btn1"
+        android:onClick="ans1"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:typeface="normal"
+        android:layout_above="@+id/btn2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="สวัสดีจ่ะ"
+        android:id="@+id/btn2"
+        android:onClick="ans2"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:id="@+id/img"
+        android:src="@drawable/e"
+        android:layout_above="@+id/btn1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/ll"
+        android:background="@drawable/rere"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btn1"
+        android:layout_alignStart="@+id/btn1"
+        android:textAlignment="textEnd"
+        android:layout_marginLeft="-40dp"
+        android:layout_above="@+id/img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="สวัสดีวันนี้ทำไรอยู่กินข้าวยังพ่อมึง"
+        android:id="@+id/tex"
+        android:layout_alignTop="@+id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
